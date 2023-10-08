@@ -85,6 +85,8 @@ a {
     width: 80vw;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .navigation {
@@ -642,7 +644,7 @@ svg#Capa_1:hover {
 
 @media screen and (max-width: 900px) {
     .tab-inner {
-        justify-content: center !important;
+        justify-content: space-between !important;
     }
 
     .mobile-content {
@@ -727,6 +729,7 @@ svg#Capa_1:hover {
     .navigation,
     .Contact {
         display: none;
+        width: 0px !important;
     }
 
     .container {
@@ -984,7 +987,14 @@ img.template-content-image {
     margin-top: 50px;
     background: url(2_3.png);
 }
-
+#myLogo {
+    display:none;
+}
+@media screen and (max-width: 500px) {
+    #myLogo {
+    display:block !important;
+}
+}
 @media screen and (max-width: 400px) { 
     .new-top-info {
     WIDTH: auto;
@@ -1054,4 +1064,9 @@ img.template-content-image {
 
 img.sub-info {
     margin-left: 15px;
+}
+svg#myLogo {
+    color: white;
+    fill: #d6d6d6;
+    width: 8vw;
 }
