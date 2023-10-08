@@ -12,9 +12,12 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     z-index: 10 !important;
-    background: #0D1117;
+    background: #141414;
+    overflow-x: hidden !important;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 /* Set a default background color and text color */
 body {
     color: #e4e4e4;
@@ -22,7 +25,6 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    margin-bottom: 10vh;
 }
 
 /* Style the header */
@@ -46,7 +48,7 @@ a {
 .top-tab {
     width: 100vw;
     height: 6rem;
-    background: #161B22;
+    background: #000000;
 }
 
 .navigation a {
@@ -67,11 +69,10 @@ a {
 }
 
 .Contact a {
-    outline: 1px solid #204980;
     border: none;
     padding: .75rem 2rem;
-    background: #121D2F;
-    color: #ABABAB;
+    color: #2FAAE7;
+    text-decoration: underline;
     font-size: 1rem;
     transition: 0.7s;
     border-radius: .3rem;
@@ -613,8 +614,8 @@ img.sqrIMG1 {
 
 .banner-tab {
     padding: 0.7vw;
-    background: #121d2f;
-    border-bottom: 1px solid #204980;
+    background: #141414;
+    border-bottom: 1px solid #363636;
     text-align: center;
 }
 
@@ -660,7 +661,15 @@ svg#Capa_1:hover {
     }
 
     .impINFO {
-        padding-top: 10vw !important;
+        margin-top: 2vw !important;
+        background: black;
+        padding-top: 1vh !important;
+        display: flex;
+        align-items: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        height: 14vh;
+        flex-direction: row;
     }
 
     .impINFO img {
@@ -845,14 +854,12 @@ img.template-content-image {
 .template-content-info button {
     border: none;
     background: none;
-    outline: .2vw solid #454545;
-    padding: .7vw 2vw;
     border-radius: .6vw;
-    color: white;
+    color: #2f81f7;
     transition: 0.3s;
     display: flex;
-    background: #272727;
     font-weight: bold;
+    text-decoration: underline;
     margin-top: 2vh;
     justify-content: space-around;
     margin-top: 3vh;
@@ -901,12 +908,13 @@ img.template-content-image {
 }
 
 .template-side-img img {
-    width: 26vw !important;
-    height: 38.6vh;
+    width: 24vw !important;
+    height: 35.630769231vh;
 }
 
 .template-portrait-side-img img {
     width: 21vw;
+    border-radius: 1vw;
 }
 
 .template-content-portrait {
@@ -941,8 +949,109 @@ img.template-content-image {
 .template-content-holder,
 .top-info,
 .top-info2,
+.new-top-info,
+.new-sub-info,
 .mobile-content {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.new-top-info {
+    width: 1155px;
+    height: 559px;
+    background: black;
+    border-radius: 35px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background: url(image3.png);
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    background-size: contain;
+}
+
+.new-top-info:hover {
+    cursor: pointer;
+    outline: 1px solid #1b1b1b;
+}
+
+.new-sub-info {
+    width: 1196px;
+    height: 520px;
+    background: red;
+    margin: auto;
+    margin-top: 50px;
+    background: url(2_3.png);
+}
+
+@media screen and (max-width: 400px) { 
+    .new-top-info {
+    WIDTH: auto;
+    padding: 0px;
+    height: 200px;
+    border-radius: 0px;
+    border-top: 1px solid #363636;
+    margin-top: 10px;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.new-sub-info {
+    DISPLAY: NONE !IMPORTANT;
+}
+
+.mobile-content {
+    display: none !important;
+}
+
+.impINFO img {
+    width: 70vw;
+}
+.mobile-new-sub-info {
+    display: flex !important;
+    height: 40vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: auto;
+}
+}
+@media screen and (max-width: 500px) { 
+    .new-top-info {
+    WIDTH: auto;
+    padding: 0px;
+    height: 220px;
+    border-radius: 0px;
+    border-top: 1px solid #363636;
+    margin-top: 10px;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.new-sub-info {
+    DISPLAY: NONE !IMPORTANT;
+}
+
+.mobile-content {
+    display: none !important;
+}
+
+.impINFO img {
+    width: 70vw;
+}
+.mobile-new-sub-info {
+    display: flex !important;
+    height: 40vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: auto;
+}
+}
+
+.mobile-new-sub-info {
+    display: none;
+}
+
+img.sub-info {
+    margin-left: 15px;
 }

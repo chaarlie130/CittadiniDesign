@@ -9,7 +9,7 @@
     }
 
     .template-content {
-        background: url('https://i.ibb.co/n8B1DXt/image.png') !important;
+        background: url(INFO_RECT.png) !important; /*informational layout*/
         background-size: contain !important;
         background-repeat: no-repeat !important;
         height: 33vh !important;
@@ -17,7 +17,7 @@
     }
 
     .template-content-landscape {
-        background: url('https://i.ibb.co/yyYVKZn/image.png') !important;
+        background: url('https://i.ibb.co/yyYVKZn/image.png') !important;/*custom layout*/
         background-size: contain !important;
         background-repeat: no-repeat !important;
         height: 49.853vh !important;
@@ -26,11 +26,13 @@
     }
 
     .template-content-portrait {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;/*multi-page layout*/
         background-size: contain !important;
         background-repeat: no-repeat !important;
-        height: 62.8vh !important;
-        width: 21vw !important;
+        height: 40vh !important;
+        background-position: center !important;
+        width: 20vw !important;
+        background-color: black !important;
     }
 }
 
@@ -38,13 +40,13 @@
 @media screen and (max-width: 768px) {
 
     #1p {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;/*multi-page layout*/
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
 
     #2p {
-        background: url('https://i.ibb.co/nRXGhwb/image.png') !important;
+        background: url(Group71.png) !important;/*complex -age layout*/
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
@@ -54,7 +56,7 @@
     }
 
     .template-content {
-        background: url('https://i.ibb.co/n8B1DXt/image.png') !important;
+        background: url(INFO_RECT.png) !important;/*informational page layout*/
         background-size: contain !important;
         background-repeat: no-repeat !important;
         height: 20vh !important;
@@ -62,7 +64,7 @@
     }
 
     .template-content-landscape {
-        background: url('https://i.ibb.co/yyYVKZn/image.png') !important;
+        background: url('https://i.ibb.co/yyYVKZn/image.png') !important;/*custom page layout*/
         background-size: contain !important;
         background-repeat: no-repeat !important;
         height: 28.853vh !important;
@@ -72,7 +74,7 @@
     }
 
     .template-content-portrait {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         height: 32.8vh !important;
@@ -80,30 +82,31 @@
     }
 }
 
-/* Media query for mobile responsiveness */
+/* Media query for mobile bento responsiveness */
 @media screen and (max-width: 500px) {
     #p1 {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
 
     #p2 {
-        background: url('https://i.ibb.co/nRXGhwb/image.png') !important;
+        background: url(Group71.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
 
     .template-content-holder {
-        width: 90vw !important;
+        width: 95vw !important;
     }
 
     .template-content {
-        background: url('https://i.ibb.co/n8B1DXt/image.png') !important;
+        background: url(INFO_RECT.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
-        height: 20vh !important;
-        width: 82vw !important;
+        height: 18.5vh !important;
+        width: 95vw !important;
+        margin: 1vh 0px;
     }
 
     .template-content-landscape {
@@ -113,11 +116,11 @@
         height: 220.238509317px !important;
         width: 84.5vw !important;
         margin: 0px !important;
-        margin: 5vh 0px !important;
+        margin: 1vh 0px !important;
     }
 
     .template-content-portrait {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         height: 328.56px !important;
@@ -126,15 +129,15 @@
 }
 
 /* Media query for mobile responsiveness */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     #1p {
-        background: url('https://i.ibb.co/xGXc97C/image.png') !important;
+        background: url(Group69.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
 
     #2p {
-        background: url('https://i.ibb.co/nRXGhwb/image.png') !important;
+        background: url(Group71.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
@@ -144,7 +147,7 @@
     }
 
     .template-content {
-        background: url('https://i.ibb.co/n8B1DXt/image.png') !important;
+        background: url(INFO_RECT.png) !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         height: 20vh !important;

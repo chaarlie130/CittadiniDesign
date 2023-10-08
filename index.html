@@ -45,7 +45,12 @@
       </div>
     </div>
   </div>
-  <div class="top-info">
+  <div class="new-top-info"></div>
+  <div class="mobile-new-sub-info">
+    <img class="sub-info" src="3_RECTANGLE.png">
+<img class="sub-info" src="4_RECTANGLE.png"><img class="sub-info" src="5_RECTANGLE.png"></div>
+  <div class="new-sub-info"></div>
+  <div class="top-info" style='display:none;'>
     <div class="info">
       <h1>Customized Website Templates</h1>
       <p>Working directly with businesses to create the product they want.</p>
@@ -299,7 +304,7 @@
     // Wait for the page to load
     window.addEventListener('load', function () {
       // Select all elements with the class "template-content-holder"
-      const elements = document.querySelectorAll('.top-info');
+      const elements = document.querySelectorAll('.new-top-info');
 
       // Add a transition effect to each element
       elements.forEach(element => {
@@ -325,6 +330,22 @@
         location.href = `https://checkout.stripe.com/c/pay/plink_1NrE63EcFxyoYNbD0T0hfjOp#fidkdWxOYHwnPyd1blppbHNgWjA0S0ZnazJAZkN9fGpcS2dBTU1yc0BpRGA2dUlKT0l2a2FRalxtTWh9Mms8NmxgSWhnT2tBMTdfMExMTmZSNmhzYm1QXUlPamdXNnZ%2FX3c1YG99Rm53Yzx1NTVSQTZKTmk8fCcpJ3VpbGtuQH11anZgYUxhJz8nNTViM3RAZnVQZ3NNPE5AYFBQJ3gl`
       }
     }
+  </script>
+  <script>
+    // Wait for the page to load
+    window.addEventListener('load', function () {
+      // Select all elements with the class "template-content-holder"
+      const elements = document.querySelectorAll('.new-sub-info');
+
+      // Add a transition effect to each element
+      elements.forEach(element => {
+        // Use a setTimeout to apply the transition after a slight delay
+        setTimeout(() => {
+          element.style.opacity = '1';
+          element.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    });
   </script>
   <script>
     // Wait for the page to load
